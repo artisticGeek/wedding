@@ -16,8 +16,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.8;
-  color: #777777;
-  color: #7f7f7f;
+  color: #333333;
   background: #fff;
   height: 100%;
   position: relative;
@@ -70,14 +69,16 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   #qbootstrap-header {
     margin-top: 0;
-    background: #fff;
     -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   }
   #qbootstrap-header .navbar-brand {
-    color: #FF847C !important;
+    color: #d1d1d1 !important;
+  }
+  .navbar-nav{
+    background-color: rgba(255, 253, 253, 0.185);
   }
   #qbootstrap-header #navbar li a {
     color: rgba(0, 0, 0, 0.5) !important;
@@ -246,14 +247,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 .section-heading.colored .svg {
-  fill: #FF847C;
+  fill: #000;
 }
 .section-heading h2 {
   font-size: 80px;
   color: #FF847C;
   display: block;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   line-height: 1.5;
+  margin: 0;
 }
 @media screen and (max-width: 768px) {
   .section-heading h2 {
@@ -264,6 +266,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   line-height: 1.5;
   color: #929292;
+  margin: 0;
 }
 @media screen and (max-width: 768px) {
   .section-heading h3 {
@@ -277,6 +280,9 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+#qbootstrap-couple p {
+margin-bottom: 0;
+}
 
 #qbootstrap-couple,
 #qbootstrap-countdown,
@@ -288,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-gallery,
 #qbootstrap-testimonials,
 #qbootstrap-press {
-  padding: 7em 0;
+  padding: 2em 0;
 }
 @media screen and (max-width: 480px) {
   #qbootstrap-couple,
@@ -301,7 +307,7 @@ h1, h2, h3, h4, h5, h6 {
   #qbootstrap-gallery,
   #qbootstrap-testimonials,
   #qbootstrap-press {
-    padding: 5em 0;
+    padding: 2em 0;
   }
 }
 
@@ -314,6 +320,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   height: 800px;
   width: 100%;
+  background-attachment: fixed !important;
+  background-position: center !important;
 }
 @media screen and (max-width: 768px) {
   .qbootstrap-cover,
@@ -338,6 +346,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
+  background-position: center;
 }
 @media screen and (max-width: 768px) {
   .qbootstrap-cover,
@@ -606,17 +615,22 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
 }
 
-#qbootstrap-couple img {
+#qbootstrap-couple .section-heading {
+margin: 0;
+}
+#qbootstrap-couple img , #qbootstrap-couple svg {
+  width: 190px;
   margin-bottom: 20px;
-  -webkit-border-radius: 50%;
+  margin: -50px 0;
+  /* -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
-  border-radius: 50%;
+  border-radius: 50%; */
 }
 #qbootstrap-couple h3 {
   font-size: 34px;
   font-family: "Clicker Script", cursive;
-  color: #FF847C;
+  color: #333;
 }
 @media screen and (max-width: 768px) {
   #qbootstrap-couple h3 {
@@ -644,6 +658,23 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-couple .amp-center .colored .svg {
   fill: #FF847C;
 }
+.custEvents {
+  padding: 0em 0 2em 0;
+}
+
+.custEvents .section-heading {
+padding-bottom: 0;
+}
+#qbootstrap-started .navbar-nav > li {
+  width: 100%;
+}
+#qbootstrap-started .navbar-nav > li a {
+  color: #fff;
+}
+#qbootstrap-started .subtext h2 {
+  text-align: center;
+  width: 100%;
+}
 
 .qbootstrap-bg {
   background-size: cover;
@@ -652,9 +683,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #qbootstrap-countdown {
+  padding: 0em 0 2em 0;
+}
+#qbootstrap-countdown {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom center !important;
   z-index: 0;
   width: 100%;
 }
@@ -663,6 +699,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qbootstrap-countdown .section-heading h2 {
   color: #fff;
+}
+#qbootstrap-started .navbar-nav > li a i {
+font-size: 18px;
+
 }
 @media screen and (max-width: 768px) {
   #qbootstrap-countdown .section-heading h2 {
@@ -689,7 +729,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   right: 0;
   z-index: -1;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
 }
 #qbootstrap-countdown .countdown {
   margin-bottom: 0;
@@ -1150,6 +1190,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid rgba(0, 0, 0, 0.05);
   position: relative;
   z-index: 0;
+  margin-bottom: 20px;
 }
 .wedding-events .desc:after {
   position: absolute;
@@ -1185,7 +1226,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   right: 0;
-  margin-top: 60%;
+  margin-top: 20px;
 }
 .wedding-events .desc .icon i {
   color: #fff;
@@ -1205,12 +1246,16 @@ h1, h2, h3, h4, h5, h6 {
 
 #qbootstrap-started {
   position: relative;
+  background-position: center bottom !important;
+  background-attachment: fixed !important;
 }
 #qbootstrap-started .section-heading {
   margin-bottom: 0 !important;
 }
 #qbootstrap-started .section-heading h2 {
   color: #fff;
+  margin: 0;
+  line-height: normal;
 }
 @media screen and (max-width: 768px) {
   #qbootstrap-started .section-heading h2 {
@@ -1238,7 +1283,10 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
+}
+#qbootstrap-started .subtext h2 , #qbootstrap-started h3 {
+color: #fff;
 }
 #qbootstrap-started .qbootstrap-heading h2 {
   color: #fff;
@@ -1527,9 +1575,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
   letter-spacing: 2px;
 }
+.downloadbtnsec {
+  padding-top: 40px;
 
+}
 #footer {
-  padding: 50px 0;
+  padding: 30px 0;
   color: #7f7f7f;
 }
 #footer .copyright {
@@ -1537,6 +1588,9 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 0;
 }
 
+#footer p {
+  margin: 0;
+}
 .btn {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -1644,6 +1698,15 @@ h1, h2, h3, h4, h5, h6 {
 .row-bottom-padded-md {
   padding-bottom: 4em;
 }
+
+
+.custEvents .section-heading.colored .svg {
+  fill: #000;
+}
+.coupleicon svg  {
+  margin: 0 !important;
+}
+
 @media screen and (max-width: 768px) {
   .row-bottom-padded-md {
     padding-bottom: 2em;
@@ -1684,4 +1747,218 @@ h1, h2, h3, h4, h5, h6 {
   animation-fill-mode: both;
 }
 
+.modal-body .svg {
+  width: 190px;
+  height: 150px;
+  margin: -40px 0;
+}
+.modal-title {
+  font-size: 34px;
+}
+.modal-body .wedding-events {
+  margin-bottom: 0;;
+  }
+  .modal-footer .btn-secondary {
+    background: #FF847C !important;
+    color: #fff;
+  }
+  .modal-footer .btn-secondary:hover { 
+    background: #393e46 !important;
+  
+  }
 /*# sourceMappingURL=style.css.map */
+@media screen and (max-width: 1199px) {
+  .qbootstrap-cover .display-tc p, .video-hero .display-tc p {
+    letter-spacing: 8px;
+
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .custEvents .wedding-events .desc .date span {
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
+  .custEvents .wedding-events .desc {
+    min-height: 480px;
+  }
+  .custEvents .wedding-events p {
+  font-size: 16px;
+  }
+  #qbootstrap-started .subtext h2, #qbootstrap-started h3 {
+    display: inline-block;
+    width: 100%;
+  }
+  #qbootstrap-started .section-heading {
+  padding-bottom: 0;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  
+  
+  .qbootstrap-cover .display-tc .svg-sm .svg, .video-hero .display-tc .svg-sm .svg {
+    height: 110px;
+  }
+  .qbootstrap-cover .display-tc h2, .video-hero .display-tc h2 {
+   font-size: 50px; 
+  }
+  .qbootstrap-cover .display-tc p, .video-hero .display-tc p {
+    font-size: 16px;
+  letter-spacing: 3px !important;
+  }
+
+  .qbootstrap-cover, .qbootstrap-hero {
+    height: 600px;
+  }
+  #qbootstrap-couple img , #qbootstrap-couple svg {
+    margin: -30px 0;
+    width: 120px;
+    height: 130px;
+  }
+  #qbootstrap-couple  .section-heading h2 {
+    font-size: 60px;
+    line-height: 40px;
+  }
+  #qbootstrap-couple .section-heading {
+    padding-bottom: 0;
+  
+  }
+
+  .coupleicon {
+    text-align: center;
+  }
+  
+  .coupleicon img , .coupleicon svg  {
+    width: 70px !important;
+    margin: 0 auto !important;
+  }
+  #qbootstrap-countdown .section-heading.svg-sm .svg {
+    height: 140px;
+  }
+  #qbootstrap-countdown .countdown small {
+    letter-spacing: 1px;
+  }
+  #qbootstrap-countdown .countdown span {
+    margin: 0 5px;
+    line-height: 1.5 ;
+  }
+  #qbootstrap-countdown .section-heading {
+  padding-bottom: 10px;
+  }
+  #qbootstrap-countdown .countdown {
+    font-size: 50px;
+  }
+  #qbootstrap-countdown {
+    background-position: 40% center !important;
+  }
+  .custEvents .section-heading h2 {
+  font-size: 38px;
+  }
+  .custEvents .section-heading.colored .svg , #qbootstrap-press .section-heading.colored .svg {
+    fill: #000;
+    width: 120px;
+    height: 120px;
+    margin-bottom:-50px;
+  }
+  #qbootstrap-press .section-heading {
+padding-bottom: 0;
+margin-bottom: 0;
+  
+  }
+  #qbootstrap-started .section-heading.colored .svg {
+    width: 120px;
+  }
+  .wedding-events .desc .date span {
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
+  #qbootstrap-started h3 {
+    font-size: 20px;
+  }
+  #qbootstrap-started .navbar-nav > li a i {
+    font-size: 14px;
+  }
+  #qbootstrap-started {
+    background-position: 38% center !important;
+  }
+  .modal .wedding-events {
+  margin-bottom: 0 !important;
+  }
+
+  .modal-header .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    color: #FF847C;
+    opacity: 1;
+  }
+  #qbootstrap-started h3 {
+    margin: 0;
+  }
+  .coupleicon h2 {
+    margin: 0 !important;
+    line-height: normal !important;
+  }
+  .coupleicon h2 svg {
+    text-align: center;
+    height: auto;
+    margin: 0 auto !important;
+  }
+  #qbootstrap-started .section-heading.colored .svg {
+    height: auto;
+  }
+  .qbootstrap-cover{
+    background-attachment: scroll;
+  }
+
+  #qbootstrap-countdown .section-heading h2 , .custEvents .section-heading h2 , #qbootstrap-started .section-heading h2 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  #qbootstrap-countdown .section-heading h2 {
+    margin-top: 20px;
+  }
+  .qbootstrap-cover , #qbootstrap-countdown , #qbootstrap-started {
+    background-attachment: fixed !important;
+  }
+}
+
+
+
+
+  @supports (-webkit-touch-callout: none) and (not (hover: hover)) {
+    .qbootstrap-cover , #qbootstrap-countdown , #qbootstrap-started {
+      background-attachment: unset !important;
+    }    
+  }
+
+  @media only screen and (min-width :768px) and (max-width : 991px) {
+    .js-qbootstrap-nav-toggle {
+      display: none;
+    
+    }
+
+    #qbootstrap-started h3 {
+      margin: 0;
+    }
+    .coupleicon h2 {
+      margin: 0 !important;
+      line-height: normal !important;
+    }
+    #qbootstrap-countdown .section-heading h2 , .custEvents .section-heading h2 , #qbootstrap-started .section-heading h2 {
+      font-size: 50px;
+      line-height: 50px;
+    }
+    .custEvents .section-heading.colored .svg , #qbootstrap-started .section-heading.svg-sm .svg {
+      margin-bottom: -60px;
+    }
+  }
+  @media only screen and (min-width :992px) and (max-width : 1199px) {
+    #qbootstrap-couple .coupleicon svg {
+      width: 70px !important;
+      height: 70px !important;
+    }
+  }

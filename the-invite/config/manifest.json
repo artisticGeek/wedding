@@ -1,0 +1,42 @@
+{
+    "name": "Sangam's Wedding",
+    "short_name": "SangamDiWedding",
+    "start_url": "/",
+    "scope":"/",
+    "display": "fullscreen",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "description": "Sanya Weds Agam",
+    "icons": [
+      {
+        "src": "https://teamgroom.sangam2024.in/icons/wedding144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "https://teamgroom.sangam2024.in/icons/wedding192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "https://teamgroom.sangam2024.in/icons/wedding512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "https://teamgroom.sangam2024.in/icons/wedding1024.png",
+        "sizes": "1024x1024",
+        "type": "image/png",
+        "form_factor": "wide"
+      },
+      {
+        "src": "https://teamgroom.sangam2024.in/icons/wedding512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "form_factor": "narrow"
+      }
+    ]
+  }
+  
