@@ -35,6 +35,7 @@ function requestNotificationPermission() {
           console.log('Notification permission granted.');
           getFCMToken();
       } else {
+          requestNotificationPermission()
           console.log('Notification permission denied.');
       }
   });

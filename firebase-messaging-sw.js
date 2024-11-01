@@ -18,7 +18,7 @@ messaging.onBackgroundMessage(function(payload) {
   const notificationTitle = payload.notification.title || 'Default Title';
   const notificationOptions = {
     body: payload.notification.body || 'Default body message.',
-    icon: 'https://artisticgeek.github.io/wedding/images/icons/wedding144.png' // Ensure this path is correct
+    icon: '/icons/wedding144.png' // Ensure this path is correct
   };
   window.alert(payload.notification.body);
   self.registration.showNotification(notificationTitle, notificationOptions)
